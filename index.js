@@ -53,7 +53,7 @@ message: 'Enter Github Username',
 
     inq.prompt(quest).then( ans => {
         text += `# ReadMe
-        # Title: (NPM displays info)
+        Title: (NPM displays info)
         
         # Table of Contents: (linked table of contents )
         1. [Description](#description)
@@ -64,8 +64,8 @@ message: 'Enter Github Username',
         6. [Tests](#tests)
         7. [Questions](#questions)
         
-        ## Description: (NPM displays info)
-        <a name="description"></a> ${ans.description}
+       Description: (NPM displays info)
+         ${ans.description}
         
         
         ## Installation: (NPM displays info)
