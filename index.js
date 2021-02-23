@@ -65,7 +65,7 @@ message: 'Enter Github Username',
         7. [Questions](#questions)
         
        Description: (NPM displays info)
-         ${ans.description}
+        <a name="description" "iin${ans.description}" ></a> 
         
         
         ## Installation: (NPM displays info)
