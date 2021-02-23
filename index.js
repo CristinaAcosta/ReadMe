@@ -49,7 +49,7 @@ message: 'Enter Github Username',
 },
 ];
 inq.prompt(quest).then( ans => {
-    text += `<#ReadMe>
+    text += `#ReadMe
     Title: ${ans.title}
     
     Description: ${ans.description}
