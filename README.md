@@ -11,27 +11,27 @@
         7. [Questions](#questions)
         
        Description: (NPM displays info)
-        <a name="description" "gh" ></a> 
+        <a name="description" ></a>) th
         
         
         ## Installation: (NPM displays info)
         <a name="install" ></a> 
-        ghgh
+        th
         
         ## Usage: (NPM displays info)
-        <a name="usage"></a> gh
+        <a name="usage"></a> th
         
         ## License: (NPM displays info and adds badge to corner)
-        <a name="license"></a> gh
+        <a name="license"></a> th
         
         ## Contributing:(NPM displays info)
-        <a name="contr"></a> gh
+        <a name="contr"></a> th
         
         ## Tests: (NPM displays info)
-        <a name="tests"></a> gh
+        <a name="tests"></a> th
         
         ## Questions: (Adds Github Username & adds email w/ additonal questions on how to reach me )
         <a name="questions"></a>  
-        - https://github.com/gh 
-        - Email: gh
+        - https://github.com/th 
+        - Email: th
         

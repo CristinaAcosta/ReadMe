@@ -1,5 +1,5 @@
-const inq = require('inquirer');
-const fs = require('fs');
+var marked = require('marked');
+var fs = require('fs');
 var text = "";
 
 function inputUser(){
@@ -65,7 +65,7 @@ message: 'Enter Github Username',
         7. [Questions](#questions)
         
        Description: (NPM displays info)
-        <a name="description" "iin${ans.description}" ></a> 
+        <a name="description" ></a>) ${ans.description}
         
         
         ## Installation: (NPM displays info)
