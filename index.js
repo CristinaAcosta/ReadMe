@@ -49,25 +49,40 @@ message: 'Enter Github Username',
 },
 ];
 inq.prompt(quest).then( ans => {
-    text += `#ReadMe
-    Title: ${ans.title}
+    text += `# ReadMe
+    # Title: (NPM displays info)
     
-    Description: ${ans.description}
+    # Table of Contents: (linked table of contents )
+    1. [Description](#description)
+    2. [Installation](#install)
+    3. [Usage](#usage)
+    4. [License](#license)
+    5. [Contributing](#contr)
+    6. [Tests](#tests)
+    7. [Questions](#questions)
     
-    Table of Contents: 
+    ## Description: (NPM displays info)
+    <a name="description"></a> ${ans.description}
     
-    Installation: ${ans.install}
     
-    Usage: ${ans.usage}
+    ## Installation: (NPM displays info)
+    <a name="install" ></a> 
+    ${ans.install}
     
-    License: ${ans.license}
+    ## Usage: (NPM displays info)
+    <a name="usage"></a> ${ans.usage}
     
-    Contributing: ${ans.contr}
+    ## License: (NPM displays info and adds badge to corner)
+    <a name="license"></a> ${ans.license}
     
-    Tests: ${ans.instruct}
+    ## Contributing:(NPM displays info)
+    <a name="contr"></a> ${ans.contr}
     
-    Questions: ${ans.user} ${ans.email}
-
+    ## Tests: (NPM displays info)
+    <a name="tests"></a> ${ans.instruct}
+    
+    ## Questions: (Adds Github Username & adds email w/ additonal questions on how to reach me )
+    <a name="questions"></a>  ${ans.user} ${ans.email}
     `;
     fs.writeFile("README.md", text, (err) => {
         if (err) throw err;
