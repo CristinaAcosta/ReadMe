@@ -1,5 +1,5 @@
-var marked = require('marked');
-var fs = require('fs');
+const inq = require('inquirer');
+const fs = require('fs');
 var text = "";
 
 function inputUser(){
@@ -67,7 +67,7 @@ message: 'Enter Github Username',
        Description: (NPM displays info)
         <a name="description" ></a>) ${ans.description}
         
-        
+        npm install --save read-markdown
         ## Installation: (NPM displays info)
         <a name="install" ></a> 
         ${ans.install}
