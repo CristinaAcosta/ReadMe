@@ -49,6 +49,12 @@ message: 'Enter Github Username',
     type: 'input',
 
 },
+{
+    message: 'Instructions on how to reach out to you?',
+       name: 'additional',
+       type: 'input',
+   
+   },
 ];
 
     inq.prompt(quest).then( ans => {
@@ -76,7 +82,7 @@ message: 'Enter Github Username',
         <a name="usage"></a> ${ans.usage}
         
         ## License: (NPM displays info and adds badge to corner)
-        <a name="license"></a> ${ans.license}
+        <a name="license"></a> [!https://img.shields.io/badge/${ans.license}]
         
         ## Contributing:(NPM displays info)
         <a name="contr"></a> ${ans.contr}
@@ -87,7 +93,8 @@ message: 'Enter Github Username',
         ## Questions: (Adds Github Username & adds email w/ additonal questions on how to reach me )
         <a name="questions"></a>  
         - https://github.com/${ans.user} 
-        - Email: ${ans.email}
+        - For more information contact me at:  ${ans.email}
+        - Additional instructions:  ${ans.additional}
         `;
         fs.writeFile("README.md", text, (err) => {
             if (err) throw err;
