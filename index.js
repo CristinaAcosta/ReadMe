@@ -7,7 +7,7 @@ const quest = [{
       type: 'input',
   },
   {
-    message: 'Enter project description.',
+    message:'Enter project description.',
     name: 'description',
     type: 'input',
 },
@@ -45,11 +45,11 @@ message: 'Enter Github Username',
  message: 'Enter email address',
     name: 'email',
     type: 'input',
- },
 
+},
 ];
 inq.prompt(quest).then( ans => {
-    text += `# ReadMe
+    text += `<#ReadMe>
     Title: ${ans.title}
     
     Description: ${ans.description}
@@ -73,4 +73,13 @@ inq.prompt(quest).then( ans => {
         if (err) throw err;
         console.log('The file has been saved!');
       });
+});
+
+init();
+
+const userName = questions.userName
+
+axios.get(`https://api.github.com/users/${userName}`)
+.then(questions => {
+  console.log(questions.data);
 });
