@@ -85,7 +85,9 @@ message: 'Enter Github Username',
         <a name="tests"></a> ${ans.instruct}
         
         ## Questions: (Adds Github Username & adds email w/ additonal questions on how to reach me )
-        <a name="questions"></a>  ${ans.user} ${ans.email}
+        <a name="questions"></a>  
+        - https://github.com/${ans.user} 
+        - Email: ${ans.email}
         `;
         fs.writeFile("README.md", text, (err) => {
             if (err) throw err;
@@ -96,11 +98,3 @@ message: 'Enter Github Username',
 
 inputUser();
 
-//init();
-
-//const userName = questions.userName
-
-// axios.get(`https://api.github.com/users/${userName}`)
-// .then(questions => {
-//   console.log(questions.data);
-// });

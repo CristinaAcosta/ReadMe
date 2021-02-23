@@ -16,6 +16,8 @@
 
 ## Installation: (NPM displays info)
 <a name="install"></a>
+- https://github.com/
+- Email: 
 
 ## Usage: (NPM displays info)
 <a name="usage"></a>
