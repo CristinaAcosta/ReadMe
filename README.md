@@ -17,7 +17,9 @@ This is a markdown file that is written to communicate important information abo
         
 ## Installation: 
 NPM Inquirer is needed to use this program. In your integrated terminal, the user would need to install the package
+
 <img width="575" alt="Screen Shot 2021-02-25 at 9 06 07 PM" src="https://user-images.githubusercontent.com/74034987/109263549-4e85a000-77b8-11eb-841d-0992937de945.png">. 
+
 Then you are able to load the code using the inquirer call “inq.prompt()”
 
 ## Usage: 
