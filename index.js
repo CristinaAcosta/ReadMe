@@ -59,42 +59,43 @@ message: 'Enter Github Username',
 
     inq.prompt(quest).then( ans => {
         text += `# ReadMe
-        #Title:  
-        ${ans.title}
+# Title:  
+${ans.title}
         
-        # Table of Contents: (linked table of contents )
-        1. (Description)[description]
-        2. (Installation)[installation]
-        3. (Usage)[usage]
-        4. (License)[license]
-        5. (Contribution)[contribution]
-        6. (Tests)[tests]
-        7. (Questions)[questions]
+# Table of Contents: 
+node in(Description)[Description]
+2. (Installation)[Installation]
+3. (Usage)[Usage]
+4. (License)[License]
+5. (Contribution)[Contribution]
+6. (Tests)[Tests]
+7. (Questions)[Questions]
         
-        ##Description: 
-        ${ans.description}
+## Description: 
+${ans.description}
         
-        ##Installation: 
-        ${ans.install}
+## Installation: 
+${ans.install}
+
+## Usage: 
+${ans.usage}
         
-        ##Usage: 
-        ${ans.usage}
+## License: (NPM displays info and adds badge to corner)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+${ans.license}
+
+## Contributing:
+${ans.contr}
         
-        ##License: (NPM displays info and adds badge to corner)
-        [https://img.shields.io/github/license/<Github-Username>/<Repository>]
-        ${ans.license}]
+## Tests: 
+${ans.instruct}
         
-        ##Contributing:
-        ${ans.contr}
-        
-        ##Tests: 
-        ${ans.instruct}
-        
-        ##Questions:
-        - https://github.com/${ans.user} 
-        - For more information contact me at:  ${ans.email}
-        - Additional instructions:  ${ans.additional}
-        `;
+## Questions:
+- https://github.com/${ans.user} 
+- For more information contact me at: ${ans.email}
+- Additional instructions: ${ans.additional}
+`;
         fs.writeFile("README.md", text, (err) => {
             if (err) throw err;
             console.log('The file has been saved!');
