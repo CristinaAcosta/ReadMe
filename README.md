@@ -25,8 +25,11 @@ Then you are able to load the code using the inquirer call “inq.prompt()”
 ## Usage: 
 <img width="288" alt="Screen Shot 2021-02-25 at 9 55 10 PM" src="https://user-images.githubusercontent.com/74034987/109261091-2300b680-77b4-11eb-98b9-8f295867565e.png"> 
 The command line is a string that prompts the user for information 
+
 Function: is used to pull a list of questions
+
 Ans: used to place where you want your answers to be.
+
 Error handling: If the string is not valid then the document will throw an error back. 
         
 ## License: 
