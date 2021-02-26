@@ -59,40 +59,38 @@ message: 'Enter Github Username',
 
     inq.prompt(quest).then( ans => {
         text += `# ReadMe
-        Title: (NPM displays info)
+        #Title:  
+        ${ans.title}
         
         # Table of Contents: (linked table of contents )
-        1. [Description](#description)
-        2. [Installation](#install)
-        3. [Usage](#usage)
-        4. [License](#license)
-        5. [Contributing](#contr)
-        6. [Tests](#tests)
-        7. [Questions](#questions)
+        1. (Description)[description]
+        2. (Installation)[installation]
+        3. (Usage)[usage]
+        4. (License)[license]
+        5. (Contribution)[contribution]
+        6. (Tests)[tests]
+        7. (Questions)[questions]
         
-       Description: (NPM displays info)
-        <a name="description" ></a>) ${ans.description}
+        ##Description: 
+        ${ans.description}
         
-        npm install --save read-markdown
-        ## Installation: (NPM displays info)
-        <a name="install" ></a> 
+        ##Installation: 
         ${ans.install}
         
-        ## Usage: (NPM displays info)
-        <a name="usage"></a> ${ans.usage}
+        ##Usage: 
+        ${ans.usage}
         
-        ## License: (NPM displays info and adds badge to corner)
-        <a name="license"></a> [https://img.shields.io/github/license/<Github-Username>/<Repository>]
+        ##License: (NPM displays info and adds badge to corner)
+        [https://img.shields.io/github/license/<Github-Username>/<Repository>]
         ${ans.license}]
         
-        ## Contributing:(NPM displays info)
-        <a name="contr"></a> ${ans.contr}
+        ##Contributing:
+        ${ans.contr}
         
-        ## Tests: (NPM displays info)
-        <a name="tests"></a> ${ans.instruct}
+        ##Tests: 
+        ${ans.instruct}
         
-        ## Questions: (Adds Github Username & adds email w/ additonal questions on how to reach me )
-        <a name="questions"></a>  
+        ##Questions:
         - https://github.com/${ans.user} 
         - For more information contact me at:  ${ans.email}
         - Additional instructions:  ${ans.additional}
