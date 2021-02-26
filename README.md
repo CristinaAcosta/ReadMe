@@ -1,5 +1,5 @@
 # ReadMe
-        Title: (NPM displays info)
+        Title: 
         
         # Table of Contents: (linked table of contents )
         1. [Description](#description)
@@ -10,29 +10,28 @@
         6. [Tests](#tests)
         7. [Questions](#questions)
         
-       Description: (NPM displays info)
+       Description: 
         <a name="description" ></a>) They is
         
-        npm install --save read-markdown
-        ## Installation: (NPM displays info)
+        ## Installation: 
         <a name="install" ></a> 
         They are
         
-        ## Usage: (NPM displays info)
+        ## Usage: 
         <a name="usage"></a> They arent
         
         ## License: (NPM displays info and adds badge to corner)
-        <a name="license"></a> [!https://img.shields.io/badge/MIT]
+        <a name="license"></a> [https://img.shields.io/github/license/<Github-Username>/<Repository>]
         
-        ## Contributing:(NPM displays info)
+        ## Contributing:
         <a name="contr"></a> They can be
         
-        ## Tests: (NPM displays info)
+        ## Tests: 
         <a name="tests"></a> they will not
         
-        ## Questions: (Adds Github Username & adds email w/ additonal questions on how to reach me )
+        ## Questions:
         <a name="questions"></a>  
         - https://github.com/CristinaAcosta 
         - For more information contact me at:  cacost5695@yahoo.com
-        - Additional instructions:  Do not email on weekends 
+        - Additional instructions:  
         

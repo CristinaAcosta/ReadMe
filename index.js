@@ -82,7 +82,8 @@ message: 'Enter Github Username',
         <a name="usage"></a> ${ans.usage}
         
         ## License: (NPM displays info and adds badge to corner)
-        <a name="license"></a> [!https://img.shields.io/badge/${ans.license}]
+        <a name="license"></a> [https://img.shields.io/github/license/<Github-Username>/<Repository>]
+        ${ans.license}]
         
         ## Contributing:(NPM displays info)
         <a name="contr"></a> ${ans.contr}
